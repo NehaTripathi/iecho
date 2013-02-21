@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="#f3f2f2" android:orientation="vertical"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:weightSum="1.0">
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="0dip" android:layout_weight=".10"
+		android:weightSum="1.0" android:background="#0097db"
+		android:orientation="horizontal">
+		<RelativeLayout android:layout_width="0dip"
+			android:layout_height="match_parent" android:layout_weight=".15"
+			android:background="#0097db" android:orientation="horizontal">
+			<Button android:layout_width="wrap_content" android:id="@+id/contects_info"
+				android:layout_height="wrap_content" android:layout_centerInParent="true"
+				android:background="@drawable/icon_info" />
+		</RelativeLayout>
+		<RelativeLayout android:layout_width="0dip"
+			android:layout_height="match_parent" android:layout_weight=".70"
+			android:background="#0097db" android:orientation="vertical">
+			<ImageView android:layout_width="140dip"
+				android:layout_height="35dip" android:src="@drawable/logo"
+				android:gravity="center_horizontal" android:layout_centerInParent="true" />
+		</RelativeLayout>
+
+		<RelativeLayout android:layout_width="0dip"
+			android:layout_height="match_parent" android:layout_weight=".15"
+			android:background="#0097db" android:orientation="horizontal">
+			<Button android:layout_width="wrap_content" android:id="@+id/contacts_home_btn"
+				android:layout_height="wrap_content" android:layout_centerInParent="true"
+				android:background="@drawable/icon_home" />
+		</RelativeLayout>
+
+	</LinearLayout>
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="0dip" android:layout_weight=".10"
+		android:weightSum="1.0" android:background="#f1f2f2"
+		android:orientation="horizontal">
+		<RelativeLayout android:layout_width="0dip"
+			android:layout_height="match_parent" android:layout_weight=".15"
+			android:background="#f1f2f2" android:orientation="horizontal">
+			<Button android:layout_width="wrap_content" android:id="@+id/contacts_add_group_btn"
+				android:layout_height="wrap_content" android:layout_centerInParent="true"
+				android:background="@drawable/icon_add" />
+		</RelativeLayout>
+		<RelativeLayout android:layout_width="0dip"
+			android:layout_height="match_parent" android:layout_weight=".70"
+			android:background="#f1f2f2" android:orientation="vertical">
+
+		    <TextView
+		        android:id="@+id/header_scr"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_centerHorizontal="true"
+		        android:layout_centerVertical="true"
+		        android:layout_margin="3dip"
+		        android:gravity="center"
+		        android:text="Contacts"
+		        android:textColor="#0097db"
+		        android:textSize="19dip" />
+		    
+		</RelativeLayout>
+
+		<RelativeLayout android:layout_width="0dip"
+			android:layout_height="match_parent" android:layout_weight=".15"
+			android:background="#f1f2f2" android:orientation="horizontal">
+			<Button android:layout_width="wrap_content" android:id="@+id/contacts_search_btn"
+				android:layout_height="wrap_content" android:layout_centerInParent="true"
+				android:background="@drawable/icon_search" />
+		</RelativeLayout>
+
+	</LinearLayout>
+	<ListView android:layout_width="fill_parent" android:id="@+id/contacts_list"
+		android:cacheColorHint="#00000000" android:layout_height="0dip"
+		android:layout_weight=".80">
+	</ListView>
+
+
+</LinearLayout>

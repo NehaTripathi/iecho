@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="#f3f2f2" android:orientation="vertical"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:weightSum="1.0">
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="0dip" android:layout_weight=".10"
+		android:weightSum="1.0" android:background="#0097db"
+		android:orientation="horizontal">
+		<RelativeLayout android:layout_width="0dip"
+			android:layout_height="match_parent" android:layout_weight=".15"
+			android:background="#0097db" android:orientation="horizontal">
+			<Button android:layout_width="wrap_content" android:id="@+id/register_user_info"
+				android:layout_height="wrap_content" android:layout_centerInParent="true"
+				android:background="@drawable/icon_info" />
+		</RelativeLayout>
+		<RelativeLayout android:layout_width="0dip"
+			android:layout_height="match_parent" android:layout_weight=".70"
+			android:background="#0097db" android:orientation="vertical">
+			<ImageView android:layout_width="140dip"
+				android:layout_height="35dip" android:src="@drawable/logo"
+				android:gravity="center_horizontal" android:layout_centerInParent="true" />
+		</RelativeLayout>
+
+		<RelativeLayout android:layout_width="0dip"
+			android:layout_height="match_parent" android:layout_weight=".15"
+			android:background="#0097db" android:orientation="horizontal">
+			<Button android:layout_width="wrap_content" android:id="@+id/register_user_home_btn"
+				android:layout_height="wrap_content" android:layout_centerInParent="true"
+				android:background="@drawable/icon_home" />
+		</RelativeLayout>
+
+	</LinearLayout>
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="0dip" android:layout_weight=".10"
+		android:background="#f3f2f2" android:orientation="horizontal">
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_alignParentLeft="true"
+			android:layout_marginLeft="15dip" android:layout_centerInParent="true"
+			android:textColor="#008bd0" android:textStyle="bold" android:text="Register"
+			android:textSize="15dip" />
+	</RelativeLayout>
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="0dip" android:layout_weight=".75"
+		android:weightSum="1.0" android:layout_marginLeft="10dip"
+		android:background="#ffffff" android:layout_marginRight="10dip"
+		android:orientation="vertical">
+
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_marginTop="10dip" android:layout_height="0dip"
+			android:layout_weight=".12" android:weightSum="1.0"
+			android:orientation="horizontal">
+			<TextView android:layout_width="0dip" android:layout_height="match_parent"
+				android:text="First Name :" android:layout_weight=".40"
+				android:layout_marginLeft="5dip" android:textSize="13dip"
+				android:gravity="center_vertical" android:textColor="#000000" />
+			<EditText android:layout_width="0dip" android:layout_height="match_parent"
+				android:layout_weight=".60" android:layout_marginRight="10dip"
+				android:id="@+id/register_user_fname_edit" android:textSize="13dip"
+				android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ" android:maxLines="1"
+				android:singleLine="true" />
+		</LinearLayout>
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="0dip" android:layout_weight=".12"
+			android:weightSum="1.0" android:orientation="horizontal">
+			<TextView android:layout_width="0dip" android:layout_height="match_parent"
+				android:text="Last Name :" android:layout_weight=".40"
+				android:layout_marginLeft="5dip" android:textSize="13dip"
+				android:gravity="center_vertical" android:textColor="#000000" />
+			<EditText android:layout_width="0dip" android:layout_height="match_parent"
+				android:textSize="13dip" android:layout_weight=".60"
+				android:id="@+id/register_user_lname_edit" android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+				android:layout_marginRight="10dip" android:maxLines="1"
+				android:singleLine="true" />
+		</LinearLayout>
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="0dip" android:layout_weight=".12"
+			android:weightSum="1.0" android:orientation="horizontal">
+			<TextView android:layout_width="0dip" android:layout_height="match_parent"
+				android:text="Email :" android:layout_weight=".40"
+				android:layout_marginLeft="5dip" android:textSize="13dip"
+				android:gravity="center_vertical" android:textColor="#000000" />
+			<EditText android:layout_width="0dip" android:layout_height="match_parent"
+				android:layout_weight=".60" android:layout_marginRight="10dip"
+				android:id="@+id/register_user_email_edit" android:textSize="13dip"
+				android:inputType="textEmailAddress" android:maxLines="1"
+				android:singleLine="true" />
+		</LinearLayout>
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="0dip" android:layout_weight=".12"
+			android:weightSum="1.0" android:orientation="horizontal">
+			<TextView android:layout_width="0dip" android:layout_height="match_parent"
+				android:text="Phone :" android:layout_weight=".40"
+				android:layout_marginLeft="5dip" android:textSize="13dip"
+				android:gravity="center_vertical" android:textColor="#000000" />
+			<EditText android:layout_width="0dip" android:layout_height="match_parent"
+				android:textSize="13dip" android:layout_weight=".60"
+				android:id="@+id/register_user_phone_edit" android:digits="1234567890"
+				android:maxLength="12" android:layout_marginRight="10dip"
+				android:maxLines="1" android:singleLine="true" />
+		</LinearLayout>
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="0dip" android:layout_weight=".12"
+			android:weightSum="1.0" android:orientation="horizontal">
+			<TextView android:layout_width="0dip" android:layout_height="match_parent"
+				android:text="Password :" android:layout_weight=".40"
+				android:layout_marginLeft="5dip" android:textSize="13dip"
+				android:gravity="center_vertical" android:textColor="#000000" />
+			<EditText android:layout_width="0dip" android:layout_height="match_parent"
+				android:textSize="13dip" android:layout_weight=".60"
+				android:id="@+id/register_user_password_edit" android:password="true"
+				android:layout_marginRight="10dip" android:maxLines="1"
+				android:singleLine="true" />
+		</LinearLayout>
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="0dip" android:layout_weight=".12"
+			android:weightSum="1.0" android:orientation="horizontal">
+			<TextView android:layout_width="0dip" android:layout_height="match_parent"
+				android:text="Re-enter    Password :" android:layout_weight=".40"
+				android:layout_marginLeft="5dip" android:textSize="13dip"
+				android:gravity="center_vertical" android:textColor="#000000" />
+			<EditText android:layout_width="0dip" android:layout_height="match_parent"
+				android:textSize="13dip" android:layout_weight=".60"
+				android:id="@+id/register_user_repassword_edit" android:password="true"
+				android:layout_marginRight="10dip" android:maxLines="1"
+				android:singleLine="true" />
+		</LinearLayout>
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="0dip" android:layout_weight=".12"
+			android:weightSum="1.0" android:orientation="horizontal">
+			<TextView android:layout_width="0dip" android:layout_height="match_parent"
+				android:text="Upload Image :" android:layout_weight=".40"
+				android:layout_marginLeft="5dip" android:textSize="13dip"
+				android:gravity="center_vertical" android:textColor="#000000" />
+			<Button android:layout_width="0dip" android:layout_height="match_parent"
+				android:textStyle="bold" android:textSize="13dip"
+				android:layout_weight=".35" android:textColor="#ffffff"
+				android:id="@+id/register_user_pic_btn" android:background="#7bb044"
+				android:text="Choose File" />
+			<RelativeLayout android:layout_width="0dip"
+				android:layout_height="match_parent" android:layout_weight=".25">
+				<ImageView android:layout_width="50dip"
+					android:layout_height="match_parent" android:layout_centerInParent="true"
+					android:id="@+id/register_user_pic_view" />
+			</RelativeLayout>
+		</LinearLayout>
+		<RelativeLayout android:layout_width="fill_parent"
+			android:layout_margin="10dip" android:layout_height="0dip"
+			android:layout_weight=".12" android:weightSum="1.0"
+			android:orientation="horizontal">
+			<Button android:layout_width="100dip" android:textStyle="bold"
+				android:id="@+id/register_user_register_btn" android:layout_height="match_parent"
+				android:textSize="13dip" android:layout_centerInParent="true"
+				android:background="#7bb044" android:text="Register"
+				android:textColor="#ffffff" />
+		</RelativeLayout>
+	</LinearLayout>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

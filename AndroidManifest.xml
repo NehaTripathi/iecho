@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.iecho.main" android:versionCode="1" android:versionName="1.0">
+	<uses-sdk android:minSdkVersion="8" />
+
+	<application android:icon="@drawable/icon" android:label="@string/app_name">
+		<activity android:name=".IechoSplashActivity"
+			android:screenOrientation="portrait">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".ChangePasswordActivity"
+			android:screenOrientation="portrait" />
+		<activity android:name=".GroupChooserActivity" android:theme="@android:style/Theme.Translucent"
+			android:screenOrientation="portrait" />
+		<activity android:name=".AboutIechoActivity" android:theme="@android:style/Theme.Translucent"
+			android:screenOrientation="portrait" />
+		<activity android:name=".FriendRequestActivity"
+			android:screenOrientation="portrait" />
+		<activity android:name=".MakeRequestActivity"
+			android:screenOrientation="portrait" />
+		<activity android:name=".ManageNotificationActivity"
+			android:screenOrientation="portrait" />
+		<activity android:name=".FollowYouOutgoingRequestActivity"
+			android:screenOrientation="portrait" />
+		<activity android:name=".FriendMeOutgoingPendingReqActivity"
+			android:screenOrientation="portrait" />
+		<activity android:name=".ViewPendingRequestActivity"
+			android:screenOrientation="portrait" />
+		<activity android:name=".FollowYouIncomingRequestActivity"
+			android:screenOrientation="portrait" />
+		<activity android:name=".SendNotificationActivity"
+			android:screenOrientation="portrait" />
+		<activity android:name=".FriendPendingRequestsActivity"
+			android:screenOrientation="portrait" />
+		<activity android:name=".ContactSearchResultActivity"
+			android:screenOrientation="portrait" />
+		<activity android:name=".NotificationEditActivity"
+			android:screenOrientation="portrait" />
+		<activity android:name=".ViewAcceptedFindMeRequestActivity"
+			android:screenOrientation="portrait" />
+		<activity android:name=".ViewAcceptedFollowYouRequestActivity"
+			android:screenOrientation="portrait" />
+		<activity android:name=".MyPendingRequestsActivity"
+			android:screenOrientation="portrait" />
+		<activity android:name=".ListSample"
+			android:screenOrientation="portrait" />
+		<activity android:name=".ContactsActivity"
+			android:screenOrientation="portrait" />
+		<activity android:name=".EditProfileActivity"
+			android:screenOrientation="portrait" />
+		<activity android:name=".ForgotPasswordActivity"
+			android:screenOrientation="portrait" />
+		<activity android:name=".FindMeIncomingRequestActivity"
+			android:screenOrientation="portrait" />
+		<activity android:name=".ViewFriendProfileActivity"
+			android:screenOrientation="portrait" />
+		<activity android:name=".HomeActivity"
+			android:screenOrientation="portrait" />
+		<activity android:name=".LoginActivity"
+			android:screenOrientation="portrait" />
+		<activity android:name=".NotificationsActivity"
+			android:screenOrientation="portrait" />
+		<activity android:name=".RegisterUserActivity"
+			android:screenOrientation="portrait" />
+		<activity android:name=".RequestsActivity"
+			android:screenOrientation="portrait" />
+		<activity android:name=".SettingsActivity"
+			android:screenOrientation="portrait" />
+		<activity android:name=".CreateNewNotificationActivity"
+			android:screenOrientation="portrait" />
+		<activity android:name=".FriendLocationMapActivity"
+			android:screenOrientation="portrait" />
+
+		<service android:name="com.iecho.services.SendUpdatedLocationService">
+		</service>
+		<service android:name="com.iecho.services.LocationListUpdateService">
+		</service>
+		<service android:name="com.iecho.services.IechoLocationManagerService">
+		</service>
+		<uses-library android:name="com.google.android.maps" /> 
+	</application>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.MOUNT_FORMAT_FILESYSTEMS" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.SEND_SMS"/>
+	<uses-permission android:name="android.permission.READ_CONTACTS" />
+	
+</manifest>

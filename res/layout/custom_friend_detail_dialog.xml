@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:orientation="vertical"
+	android:layout_height="fill_parent">
+
+	<LinearLayout android:layout_width="290dip"
+		android:layout_height="wrap_content" android:orientation="horizontal">
+		<TextView android:layout_width="95dip" android:layout_height="wrap_content"
+			android:paddingLeft="4dip" android:textColor="#000000" android:text="Status : " />
+		<TextView android:layout_width="195dip" android:paddingRight="5dip"
+			android:layout_height="wrap_content" android:textColor="#000000"
+			android:id="@+id/statusTextView" />
+	</LinearLayout>
+	<LinearLayout android:layout_width="290dip"
+		android:layout_height="wrap_content" android:orientation="horizontal">
+		<TextView android:layout_width="95dip" android:layout_height="wrap_content"
+			android:paddingLeft="4dip" android:textColor="#000000" android:text="Location : " />
+		<TextView android:layout_width="195dip" android:paddingRight="5dip"
+			android:layout_height="wrap_content" android:textColor="#000000"
+			android:id="@+id/locationTextView" />
+	</LinearLayout>
+
+	<Button android:id="@+id/dialog_btn1" android:layout_width="fill_parent"
+		android:background="#7bb044" android:layout_height="36dip"
+		android:textColor="#ffffff" android:visibility="gone"
+		android:textSize="18dip" android:layout_margin="3dip" />
+
+	<Button android:id="@+id/dialog_btn2" android:layout_width="fill_parent"
+		android:background="#7bb044" android:layout_height="36dip"
+		android:textColor="#ffffff" android:layout_margin="3dip"
+		android:textSize="18dip" android:visibility="gone" />
+
+	<Button android:id="@+id/dialog_btn4" android:layout_width="fill_parent"
+		android:background="#7bb044" android:layout_height="36dip"
+		android:textColor="#ffffff" android:layout_margin="3dip"
+		android:textSize="18dip" android:visibility="gone" />
+
+</LinearLayout>

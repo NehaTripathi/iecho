@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="#f3f2f2" android:orientation="vertical"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:weightSum="1.0">
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="0dip" android:layout_weight=".10"
+		android:weightSum="1.0" android:background="#0097db"
+		android:orientation="horizontal">
+		<RelativeLayout android:layout_width="0dip"
+			android:layout_height="match_parent" android:layout_weight=".15"
+			android:background="#0097db" android:orientation="horizontal">
+			<Button android:layout_width="wrap_content" android:id="@+id/requests_info"
+				android:layout_height="wrap_content" android:layout_centerInParent="true"
+				android:background="@drawable/icon_info" />
+		</RelativeLayout>
+		<RelativeLayout android:layout_width="0dip"
+			android:layout_height="match_parent" android:layout_weight=".70"
+			android:background="#0097db" android:orientation="vertical">
+			<ImageView android:layout_width="140dip"
+				android:layout_height="35dip" android:src="@drawable/logo"
+				android:gravity="center_horizontal" android:layout_centerInParent="true" />
+		</RelativeLayout>
+
+		<RelativeLayout android:layout_width="0dip"
+			android:layout_height="match_parent" android:layout_weight=".15"
+			android:background="#0097db" android:orientation="horizontal">
+			<Button android:layout_width="wrap_content" android:id="@+id/requests_home_btn"
+				android:layout_height="wrap_content" android:layout_centerInParent="true"
+				android:background="@drawable/icon_home" />
+		</RelativeLayout>
+
+	</LinearLayout>
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="0dip" android:layout_weight=".10"
+		android:background="#f3f2f2" android:orientation="horizontal">
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_alignParentLeft="true"
+			android:layout_marginLeft="15dip" android:layout_centerInParent="true"
+			android:textColor="#008bd0" android:textStyle="bold" android:text="Request"
+			android:textSize="15dip" />
+	</RelativeLayout>
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="0dip" android:layout_weight=".30"
+		android:layout_marginLeft="10dip" android:layout_marginRight="10dip"
+		android:weightSum="1.0" android:background="#ffffff"
+		android:orientation="vertical">
+
+		<RelativeLayout android:layout_width="fill_parent"
+			android:layout_height="0dip" android:layout_weight=".50"
+			android:weightSum="1.0" android:orientation="horizontal">
+			<Button android:layout_width="fill_parent"
+				android:layout_height="36dip" android:layout_marginBottom="15dip"
+				android:textStyle="bold" android:layout_marginLeft="25dip"
+				android:id="@+id/requests_view_track_req_btn"
+				android:layout_marginRight="25dip" android:text="Pending Requests"
+				android:background="#7bb044" android:textColor="#ffffff"
+				android:layout_centerInParent="true" />
+		</RelativeLayout>
+		
+		<RelativeLayout android:layout_width="fill_parent"
+			android:layout_height="0dip" android:layout_weight=".50"
+			android:weightSum="1.0" android:orientation="horizontal">
+			<Button android:layout_width="fill_parent"
+				android:layout_height="36dip" android:layout_marginBottom="15dip"
+				android:id="@+id/requests_make_track_req_btn" android:textStyle="bold"
+				android:layout_marginLeft="25dip" android:layout_marginRight="25dip"
+				android:text="My Requests" android:background="#7bb044"
+				android:textColor="#ffffff" android:layout_centerInParent="true" />
+		</RelativeLayout>
+	</LinearLayout>
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

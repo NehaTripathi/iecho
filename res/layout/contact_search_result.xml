@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="#f3f2f2" android:orientation="vertical"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:weightSum="1.0">
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="0dip" android:layout_weight=".10"
+		android:weightSum="1.0" android:background="#0097db"
+		android:orientation="horizontal">
+		<RelativeLayout android:layout_width="0dip"
+			android:layout_height="match_parent" android:layout_weight=".15"
+			android:background="#0097db" android:orientation="horizontal">
+			<Button android:layout_width="wrap_content" android:id="@+id/contact_search_info"
+				android:layout_height="wrap_content" android:layout_centerInParent="true"
+				android:background="@drawable/icon_info" />
+		</RelativeLayout>
+		<RelativeLayout android:layout_width="0dip"
+			android:layout_height="match_parent" android:layout_weight=".70"
+			android:background="#0097db" android:orientation="vertical">
+			<ImageView android:layout_width="140dip"
+				android:layout_height="35dip" android:src="@drawable/logo"
+				android:gravity="center_horizontal" android:layout_centerInParent="true" />
+		</RelativeLayout>
+
+		<RelativeLayout android:layout_width="0dip"
+			android:layout_height="match_parent" android:layout_weight=".15"
+			android:background="#0097db" android:orientation="horizontal">
+			<Button android:layout_width="wrap_content" android:id="@+id/contact_result_home_btn"
+				android:layout_height="wrap_content" android:layout_centerInParent="true"
+				android:background="@drawable/icon_home" />
+		</RelativeLayout>
+
+	</LinearLayout>
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="0dip" android:layout_weight=".12"
+		android:weightSum="1.0" android:background="#ffffff"
+		android:orientation="vertical">
+		<TextView android:layout_width="fill_parent"
+			android:textStyle="bold" android:layout_height="wrap_content"
+			android:text="Search Result" android:padding="5dip"
+			android:textColor="#008bd0" android:textSize="15dip" />
+		<TextView android:layout_width="fill_parent" android:id="@+id/contact_result_number_text"
+			android:textStyle="bold" android:layout_height="wrap_content"
+			android:text="3 Result Found" android:layout_marginLeft="5dip"
+			android:textColor="#ff0000" android:textSize="12dip" />
+	</LinearLayout>
+
+	<ListView android:layout_width="fill_parent" android:id="@+id/contact_result_list"
+		android:cacheColorHint="#00000000" android:layout_height="0dip"
+		android:layout_weight=".78">
+	</ListView>
+
+
+</LinearLayout>
